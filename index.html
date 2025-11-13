@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenya Constitution Simplified</title>
-    <link rel="stylesheet" href=".css/style.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="js/script.js" defer></script> 
 </head>
 <body>
     <header>
         <h1>My Rights, My Power: Constitution of Kenya Explained</h1>
     </header>
 
+    <nav class="navbar">
+        <a href="#article1">Power</a>
+        <a href="#chapter2">Identity</a>
+        <a href="#chapter4">My Rights</a>
+        <a href="#chatbot-area">Ask Bot</a>
+    </nav>
+    
     <main>
+        
         <section id="article1">
-            <h2>Article 1: Simplified Summary</h2>
-            <p><strong>Original Text (Simply put):</strong> All power belongs to the people of Kenya. You are the boss! You can give this power to your leaders (like the President, MP, or MCA) to use for you, but they must always use it according to the Constitution.</p>
+            <h2>Article 1: Who's the Boss?</h2>
+            <p><strong>Simplified Summary:</strong> All power belongs to the people of Kenya. **You are the ultimate boss!** You can give this power to your leaders (like the President, MP, or MCA) to use for you, but they must always use it according to the Constitution.</p>
             <button onclick="toggleOriginalText('original1')">Show Full Article 1 Text</button>
             <div id="original1" style="display:none;">
                 <p>*(Original text for Article 1 will be added here later)*</p>
+            </div>
+        </section>
+
+        <section id="chapter2">
+            <h2>Chapter 2: Kenya's Identity (The Rules We Live By)</h2>
+            <p><strong>Simplified Summary:</strong> This chapter defines what makes Kenya *Kenya*. It establishes the **National Values** (like patriotism, human dignity, and rule of law) that **every single person and leader** in the country must follow. It also defines our official symbols like the flag, the National Anthem, and the Coat of Arms—these are things we all share!</p>
+            <button onclick="toggleOriginalText('original2')">Show Full Chapter 2 Text</button>
+            <div id="original2" style="display:none;">
+                <p>*(Original text for Chapter 2, Articles 8, 9, and 10 will be added here later)*</p>
+            </div>
+        </section>
+        
+        <section id="chapter4">
+            <h2>Chapter 4: The Bill of Rights (Your Superpowers!)</h2>
+            <p><strong>Simplified Summary:</strong> This is the most powerful part of the Constitution! It's a list of fundamental rights and freedoms that belong to **you**—your guaranteed "superpowers" that the government and nobody else can take away. It covers everything from the right to life and equality, to education and privacy. **Knowing this chapter is knowing your full legal strength!**</p>
+            <button onclick="toggleOriginalText('original4')">Show Full Chapter 4 Text</button>
+            <div id="original4" style="display:none;">
+                <p>*(Original text for Chapter 4 will be added here later)*</p>
             </div>
         </section>
 
@@ -28,7 +55,5 @@
             <button onclick="sendMessage()">Send</button>
         </section>
     </main>
-
-    <script src="script.js"></script> 
 </body>
 </html>
