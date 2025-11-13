@@ -1,52 +1,36 @@
-// A simple function to toggle the visibility of the original text
-function toggleOriginalText(id) {
-    var element = document.getElementById(id);
-    var button = element.previousElementSibling;
-    
-    if (element.style.display === "none") {
-        element.style.display = "block";
-        button.textContent = "Hide Full Article Text";
-    } else {
-        element.style.display = "none";
-        button.textContent = "Show Full Article Text"; 
-    }
-}
+// Function removed as the HTML structure no longer uses the original text toggles.
 
 // --- Simple Chatbot Logic ---
 
-// A dictionary of questions and simple answers (FAQ style)
+// A dictionary of questions and simple answers (FAQ style) based on all provided data
 const knowledgeBase = {
-    // CHAPTER 1-3: FOUNDATION, IDENTITY, CITIZENSHIP
-    "power": "All power belongs to the people of Kenya (Article 1). You lend it to your elected leaders, but you remain the ultimate authority!",
-    "citizenship": "Citizenship (Chapter 3) defines who is legally Kenyan, usually by birth, and allows for dual citizenship (holding two passports)!",
+    // NEW HISTORY KNOWLEDGE
+    "history": "The 2010 Constitution was created after decades of centralized power and violence following the 2007 elections, forcing leaders to seek lasting reform.",
+    "2007 violence": "The widespread violence after the 2007 disputed elections was the main catalyst that forced leaders to agree on fundamental constitutional reforms.",
+    "referendum issues": "The main controversial points were land reform, the abortion clause, Kadhi courts, and concerns over the President's remaining power.",
+    "land issue": "The land chapter was highly contentious because large landholders feared the reforms would challenge their historic ownership and tenure.",
+    "abortion": "The abortion clause was opposed by Christian groups who worried the allowance for abortion in cases of 'maternal health' was too broad.",
+    "kadhi courts": "The inclusion of Kadhi Courts (for Muslim civil matters) was controversial, with some groups arguing it violated the secular nature of the Kenyan state.",
     
-    // CHAPTER 4-7: RIGHTS, LAND, INTEGRITY, ELECTIONS
-    "bill of rights": "The Bill of Rights (Chapter 4) guarantees your fundamental rights, like freedom of speech, health, and education. They are your legal 'superpowers'!",
-    "integrity": "Leadership and Integrity (Chapter 6) requires ALL public officials to be honest, transparent, and serve the public good, not their own pockets.",
-    "elections": "Elections (Chapter 7) are the process where citizens use their vote to choose leaders in a free, fair, and transparent way. Your vote is your power!",
+    // CORE CONCEPTS & ARMS OF GOVERNMENT
+    "supreme law": "The Constitution is the supreme law of the land, meaning all other laws and government actions must adhere to it.",
+    "bill of rights": "The Bill of Rights (Chapter 4) is a cornerstone, guaranteeing civil, political, economic, and social rights to all Kenyans.",
+    "arms of government": "The three arms of government are the Executive (President), the Legislature (Parliament), and the Judiciary (Courts).",
+    "executive": "The Executive is led by the President and implements laws and runs the national government.",
+    "parliament": "The Legislature (Parliament) is the bicameral body (National Assembly and Senate) that makes laws and oversees the Executive.",
+    "judiciary": "The Judiciary is the independent court system that interprets the law and ensures constitutional compliance.",
+    
+    // DEVOLUTION & ACCOUNTABILITY
+    "devolution": "Devolution is key: it created 47 counties with elected leaders to manage local affairs and share power, correcting past centralization.",
+    "integrity": "Leadership and Integrity sets high ethical standards for all public officers, demanding honesty, transparency, and accountability (Chapter 6).",
+    "elections": "Elections are regulated by the IEBC (Chapter 7) to ensure they are free and fair based on universal suffrage.",
+    
+    // TECHNICAL
+    "schedules": "The Schedules are the technical appendices of the Constitution containing lists, Oaths, and procedural rules to implement the main Articles (e.g., the Fourth Schedule lists county duties).",
 
-    // CHAPTER 8-10: ARMS OF GOVERNMENT
-    "legislature": "The Legislature (Chapter 8 - Parliament) is the arm that **makes and debates** national laws.",
-    "executive": "The Executive (Chapter 9) is the arm led by the President. Its job is to **run the country and implement** the laws.",
-    "judiciary": "The Judiciary (Chapter 10 - Courts) is the arm that **interprets** the Constitution and laws, ensuring justice and settling disputes.",
-    
-    // CHAPTER 11-13: GOVERNANCE & FINANCE
-    "what is devolution": "Devolution (Chapter 11) shares power between the national government and 47 county governments to bring services closer to you!",
-    "public finance": "Public Finance (Chapter 12) sets the rules for collecting and spending government money, demanding transparency and accountability.",
-    
-    // CHAPTER 14-18: SECURITY, COMMISSIONS, AMENDMENT, TRANSITION
-    "national security": "National Security (Chapter 14) covers the military and police, ensuring they protect citizens and respect human rights.",
-    "commissions": "Commissions (Chapter 15) are independent bodies (like EACC, IEBC) that are free from government control and protect the Constitution.",
-    "amendment": "Amendment (Chapter 16) sets out the very strict rules for **changing** the Constitution.",
-    
-    // NEW SCHEDULES KNOWLEDGE
-    "schedules": "The Schedules are the technical appendices of the Constitution. They contain essential lists and procedural rules that help implement the main Articles.",
-    "fourth schedule": "The Fourth Schedule is crucial! It lists exactly which duties belong to the National Government and which belong to the County Governments (Devolution).",
-    
     // GENERAL & DEFAULT
-    "who is the president": "The President is the head of the country and the main person in the Executive arm of government. They are elected by the people.",
-    "hello": "Hello! I am the Constitution Bot. Ask me anything simple about the Kenyan Constitution, like 'What is the Fourth Schedule?'",
-    "default": "I'm sorry, I don't have a simple answer for that. Try asking about the 'Judiciary', 'Elections', or 'Public Finance'!"
+    "hello": "Hello! I am the Constitution Bot. Ask me about a topic, like 'What was the main issue with Land Reform?' or 'What is the Bill of Rights?'",
+    "default": "I'm sorry, I don't have a simple answer for that. Try asking about the 'history', 'judiciary', 'devolution', or 'abortion'!"
 };
 
 function sendMessage() {
