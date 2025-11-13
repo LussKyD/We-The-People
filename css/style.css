@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding-top: 50px; /* Space for the sticky navbar */
     background-color: #f4f4f9;
     color: #333;
 }
@@ -33,10 +33,36 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    margin-right: 10px;
 }
 button:hover {
     background-color: #0096c7;
 }
+/* --- NEW NAVIGATION BAR STYLING --- */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100; /* Ensure it's on top of other content */
+    text-align: center;
+}
+.navbar a {
+    float: none;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #555;
+    color: white;
+}
+/* --- END NEW NAVIGATION BAR STYLING --- */
+
 #chatbot-area {
     background-color: #e6f7ff; /* Lighter blue for the bot */
 }
