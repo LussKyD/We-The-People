@@ -19,33 +19,33 @@ const knowledgeBase = {
     // CHAPTER 1-3: FOUNDATION, IDENTITY, CITIZENSHIP
     "power": "All power belongs to the people of Kenya (Article 1). You lend it to your elected leaders, but you remain the ultimate authority!",
     "citizenship": "Citizenship (Chapter 3) defines who is legally Kenyan, usually by birth, and allows for dual citizenship (holding two passports)!",
-    "supremacy": "The Constitution is the supreme law (Chapter 1). All other laws and actions must obey it.",
     
     // CHAPTER 4-7: RIGHTS, LAND, INTEGRITY, ELECTIONS
     "bill of rights": "The Bill of Rights (Chapter 4) guarantees your fundamental rights, like freedom of speech, health, and education. They are your legal 'superpowers'!",
-    "environment": "Chapter 5 guarantees your right to a clean and healthy environment, and ensures land is managed fairly and sustainably.",
     "integrity": "Leadership and Integrity (Chapter 6) requires ALL public officials to be honest, transparent, and serve the public good, not their own pockets.",
     "elections": "Elections (Chapter 7) are the process where citizens use their vote to choose leaders in a free, fair, and transparent way. Your vote is your power!",
 
     // CHAPTER 8-10: ARMS OF GOVERNMENT
-    "legislature": "The Legislature (Chapter 8 - Parliament) is the arm that **makes and debates** national laws (National Assembly and Senate).",
+    "legislature": "The Legislature (Chapter 8 - Parliament) is the arm that **makes and debates** national laws.",
     "executive": "The Executive (Chapter 9) is the arm led by the President. Its job is to **run the country and implement** the laws.",
     "judiciary": "The Judiciary (Chapter 10 - Courts) is the arm that **interprets** the Constitution and laws, ensuring justice and settling disputes.",
-    "arms of government": "The three main arms are the Executive, Legislature, and Judiciary. They keep each other in check!",
-
+    
     // CHAPTER 11-13: GOVERNANCE & FINANCE
     "what is devolution": "Devolution (Chapter 11) shares power between the national government and 47 county governments to bring services closer to you!",
-    "finance": "Public Finance (Chapter 12) sets the rules for collecting and spending government money, demanding transparency and accountability.",
-    "public service": "The Public Service (Chapter 13) sets the values (like professionalism and efficiency) for all government workers.",
-
+    "public finance": "Public Finance (Chapter 12) sets the rules for collecting and spending government money, demanding transparency and accountability.",
+    
     // CHAPTER 14-18: SECURITY, COMMISSIONS, AMENDMENT, TRANSITION
     "national security": "National Security (Chapter 14) covers the military and police, ensuring they protect citizens and respect human rights.",
-    "commissions": "Commissions (Chapter 15) are independent bodies (like EACC, IEBC, KNCHR) that are free from government control and protect the Constitution.",
-    "amendment": "Amendment (Chapter 16) sets out the very strict rules for **changing** the Constitution, usually requiring broad public or parliamentary support.",
+    "commissions": "Commissions (Chapter 15) are independent bodies (like EACC, IEBC) that are free from government control and protect the Constitution.",
+    "amendment": "Amendment (Chapter 16) sets out the very strict rules for **changing** the Constitution.",
+    
+    // NEW SCHEDULES KNOWLEDGE
+    "schedules": "The Schedules are the technical appendices of the Constitution. They contain essential lists and procedural rules that help implement the main Articles.",
+    "fourth schedule": "The Fourth Schedule is crucial! It lists exactly which duties belong to the National Government and which belong to the County Governments (Devolution).",
     
     // GENERAL & DEFAULT
     "who is the president": "The President is the head of the country and the main person in the Executive arm of government. They are elected by the people.",
-    "hello": "Hello! I am the Constitution Bot. Ask me anything simple about the Kenyan Constitution, like 'What is Devolution?'",
+    "hello": "Hello! I am the Constitution Bot. Ask me anything simple about the Kenyan Constitution, like 'What is the Fourth Schedule?'",
     "default": "I'm sorry, I don't have a simple answer for that. Try asking about the 'Judiciary', 'Elections', or 'Public Finance'!"
 };
 
